@@ -1,0 +1,57 @@
+# -- Symfony2 -----------------------------------------
+app/bootstrap.php.cache
+app/config/parameters.yml
+app/cache/*
+app/logs/*
+vendor/*
+web/bundles/*
+web/uploads/*
+
+# -- Composer -----------------------------------------
+composer.phar
+
+# -- PHPUnit ------------------------------------------
+app/phpunit.xml
+
+# -- Editors ------------------------------------------
+
+# eclipse
+*.pydevproject
+.project
+.metadata
+bin/**
+tmp/**
+tmp/**/*
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.classpath
+.settings/
+.loadpath
+.externalToolBuilders/
+*.launch
+.buildpath
+
+# -- Operating Systems -------------------------------
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+.*
+!.gitignore
+*~
+
+# Mac OS X
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.Spotlight-V100
+.Trashes
