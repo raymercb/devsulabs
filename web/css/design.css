@@ -1,0 +1,61 @@
+@CHARSET "ISO-8859-1";
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+/* ===========================================================================
+   Header 
+   ======================================================================== */
+header {
+    border-bottom: 1px solid #CCC;
+    height: 40px;
+    width: 100%;
+}
+.row {
+    max-width: 920px;
+    margin: 0 auto 1em;
+}
+.logo {
+    float: left;
+}
+.security {
+    text-align: right;
+	height: 20px;
+	position: relative;
+	margin-right: 0px;
+	padding-top: 10px;	
+}
+/* ===========================================================================
+   Content
+   ======================================================================== */
+#content {
+    margin: 0 auto 1em;
+    width: 920px;
+    min-height: 400px;
+    padding-top: 10px;
+}
+
+article {
+    float: left;
+    padding: 0 10px 0 20px;
+    width: 660px;
+}
+
+aside {
+    float: right;
+    padding: 0 20px 0 10px;
+    width: 200px;
+}
+
+/* ===========================================================================
+   Footer
+   ======================================================================== */
+footer {
+    border-top: 1px solid #CCC;
+    height: 40px;
+    width: 100%;
+    color: #999;
+    font-size: 13px;
+    padding-top: 1em;
+    position: relative;
+    text-align: center;    
+}

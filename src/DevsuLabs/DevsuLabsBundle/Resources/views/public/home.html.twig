@@ -1,0 +1,26 @@
+{% extends '::base.html.twig' %}
+{% block title %}Home{% endblock %}
+
+{% block body %}
+
+<article>
+    {% for devsulab in arrDevsuLabs %}
+    	<div id="devsulab">
+    		{{ devsulab.title }}
+    	</div>
+    {% endfor %}
+</article>
+
+<aside>
+    <div>Categories:</div>
+    <div>
+    	{% for category in arrCategories %}
+    		<a href="{{ path('devsulabs_find_by_category', { 'id': category.id }) }}">
+    			{{ category.typeName }} <br>
+	        </a>
+    	{% endfor %}
+    	<a href="{{ path('devsulabs_find_by_category', { 'id': 0 }) }}">All Categories</a>
+    </div>
+</aside>
+
+{% endblock %}

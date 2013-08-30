@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}{% endblock %} | Devsu Labs</title>
+		{% block stylesheets %}					
+			<link href="{{ asset('css/design.css') }}" rel="stylesheet" type="text/css" />
+		{% endblock %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    </head>
+    <body>
+        <header>
+        	<div class="row">
+	            <div id="divLogo" class="logo">
+	                <a href="{{ path('devsulabs_home') }}">
+	                	<img alt="DevsuLabs" src="{{ asset('img/logo.png') }}" >
+	                </a>
+	            </div>
+				<div id="divSecurity" class="security"><a href="{{ path('devsulabs_login') }}">Login</a><br></div>
+        	</div>				
+		</header>
+		
+        <div id="content">	
+			{% block body %}{% endblock %}		
+		</div>	
+			
+		<footer>
+        	<div class="row">
+        		Copyright &copy; 2013 DevsuSoftware Cia. Ltda. All rights reserved.
+        	</div>			
+		</footer>			
+			
+		{% block javascripts %}
+		{% endblock %}
+    </body>
+</html>

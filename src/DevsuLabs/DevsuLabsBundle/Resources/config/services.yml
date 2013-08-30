@@ -1,0 +1,7 @@
+parameters:
+#    devsu_labs.example.class: DevsuLabs\DevsuLabsBundle\Example
+
+services:
+#    devsu_labs.example:
+#        class: %devsu_labs.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

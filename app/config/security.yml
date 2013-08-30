@@ -1,0 +1,22 @@
+security:
+    firewalls:
+        secured_area:
+            pattern:        ^/*
+            anonymous:      ~
+            form_login:
+                login_path: devsulabs_login
+                check_path: devsulabs_login_check
+            logout:
+                path:       devsulabs_logout
+                target:     devsulabs_home  
+
+    access_control:
+        - { path: ^/public/*, roles: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/private/*,      roles: [ROLE_USER] }
+    
+    providers:
+        users:            
+            entity: { class: DevsuLabs\DevsuLabsBundle\Entity\Developer, property: email }
+    
+    encoders:
+        ShopTheFarms\STFCoreBundle\Entity\User: sha512

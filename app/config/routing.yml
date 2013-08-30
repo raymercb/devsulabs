@@ -1,0 +1,4 @@
+devsu_labs:
+    resource: "@DevsuLabsBundle/Resources/config/routing.yml"
+    prefix:   /
+

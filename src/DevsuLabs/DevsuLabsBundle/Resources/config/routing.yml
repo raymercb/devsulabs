@@ -1,0 +1,31 @@
+#Security routes
+devsulabs_login:
+    pattern:  /public/login
+    defaults: { _controller: DevsuLabsBundle:Default:login }
+       
+devsulabs_check:
+    pattern:  /public/check
+    
+devsulabs_logout:
+    pattern:  /public/logout  
+    
+#Other routes
+devsulabs_home:
+    pattern:  /public/home
+    defaults: { _controller: DevsuLabsBundle:Default:home }
+    
+devsulabs_manage:
+    pattern:  /private/manage
+    defaults: { _controller: DevsuLabsBundle:Default:manage }
+    
+devsulabs_new:
+    pattern:  /private/new
+    defaults: { _controller: DevsuLabsBundle:Default:new }
+    
+devsulabs_find_by_category:
+    pattern:  /public/home/{id}
+    defaults: { _controller: DevsuLabsBundle:Default:find }
+    
+devsulabs_test:
+    pattern:  /public/test
+    defaults: { _controller: DevsuLabsBundle:Default:test }

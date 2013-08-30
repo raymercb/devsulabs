@@ -1,0 +1,21 @@
+{% extends '::base.html.twig' %}
+{% block title %}Login Form{% endblock %}
+
+{% block body %}
+	{% if error %}
+		<div>{{ error.message }}</div>
+	{% endif %}
+	
+	<form action="{{ path('devsulabs_check') }}" method="post">
+		<label for="username">E-Mail:</label>
+		<input type="text" id="username" name="_username" value="{{ last_username  | default('') }}" />
+		<br>
+		<label for="password">Password:</label>
+		<input type="password" id="password" name="_password" />
+		<br>
+		<input type="checkbox" id="no_logout" name="_remember_me" checked />
+		<label for="no_cerrar">Remember me</label>
+		<br>
+		<input type="submit" name="login" value="Login" />
+	</form>	
+{% endblock %}
